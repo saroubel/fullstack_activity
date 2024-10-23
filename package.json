@@ -1,0 +1,27 @@
+{
+  "name": "go-fullstack-fr-activity",
+  "version": "1.0.0",
+  "description": "Clone this repo, and run `npm install` from within the project directory. ## Using the app ## Run `npm start` from within the project directory.",
+  "main": "index.html",
+  "scripts": {
+    "start": "run-script-os",
+    "start:linux:darwin": "concurrently \"node ./node_modules/.bin/http-server -a localhost -p 8081\"  \"sleep 1 && open http://localhost:8081\"",
+    "start:win32": "node node_modules/live-server/live-server --port=8081"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "http-server": "^0.11.1",
+    "live-server": "^1.2.1",
+    "mongoose": "^7.8.2",
+    "nodemon": "^3.1.7"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "run-script-os": "^1.1.6"
+  }
+}
